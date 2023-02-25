@@ -40,23 +40,85 @@
 </head>
 <body>
   <header>
-    <!-- Navigation -->
-    <nav>
-      <div class="container-nav">
-        <!-- Image Logo -->
-        <a class="logo-text" href="index.html"></a>
-        <!-- Image Logo - Use this if you have an image logo -->
-        <!-- <a class="logo-image" href="index.html"><img src="#" alt="Your Logo name"></a> -->
-        
-        <div class="hamburger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div> <!-- end of hamburger ---->
+    <!-- Navigation for mobile-->
+    <nav class="nav-mobile">
+      <!--Hamburger-->
+      <button aria-label="Open navigation" class="open-nav">&#9776;</button>
+      <!--End of Hamburger-->
+      
+      <!-- Image Logo -->
+      <a class="logo" href="index.html"><img src="images/logo.svg" alt="Your Logo name"></a>
+      <!-- Image Logo - Use this if you have an image logo -->
+      <!--Cart-->
+      <a href="#"><img src="images/shopping-bag.png" alt="Cart icon"></a>
+      <!--End of Cart-->
+      
+      
+
+      <!--
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div> <-- end of hamburger ---->
 
         
-      </div> <!-- end of container-prim -->
-    </nav> <!-- end of nav -->
+     
+    </nav> 
+    <!-- end of nav for mobile -->
+
+    <!--Menu on mobile-->
+    <nav class="menu-mobile">
+      <button aria-label="Close navigation" class="close-nav">
+        &times;
+      </button>
+      <ul class="list-inside">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li id="js-about">
+          <a href="#about" class="nav-link">About</a>
+        </li>
+        <li id="js-services"><a href="#services" class="nav-link">Services</a></li>
+        <li id="js-work"><a href="#work" class="nav-link">Work</a></li>
+        <li id="js-contact"><a href="contact.html" class="inside-btn btn">Book A Free Call</a>
+        </li>
+      </ul>
+    </nav>
+    <!--End of Menu on mobile-->
+
+    <!-- Navigation for tablet and desktop-->
+    <nav class="menu-large">
+      
+      <div class="top-nav">
+        <!-- Image Logo -->
+        <a class="logo" href="index.html"><img src="images/logo.svg" alt="Your Logo name"></a>
+        <!-- Image Logo - Use this if you have an image logo -->
+        <div class="nav-right">
+          <a href="#"><img src="images/search.png" alt="Search icon"></a>
+          <a href="#"><img src="images/shopping-bag.png" alt="Cart icon"></a>
+        </div>
+      </div>
+      <div class="bottom-nav">
+        <div class="trust-item">
+          <img src="images/truck.png" alt="Truck icon">
+          <p class="text-300">Free Worldwide Shipping</p>
+        </div>
+        <div class="trust-item">
+          <img src="images/rotate-cw.png" alt="Guarantee icon">
+          <p class="text-300">50 Days Money Back Guarantee</p>
+        </div>
+        <div class="trust-item">
+          <img src="images/star-border.png" alt="Loved by icon">
+          <p class="text-300">Loved by Thousands</p>
+        </div>
+        <div class="trust-item">
+          <img src="images/support-agent.png" alt="Truck icon">
+          <p class="text-300">24/ Customer Support</p>
+        </div>
+        
+      </div>
+        
+      
+    </nav>
     <!-- end of navigation -->
   </header>
   <main>
@@ -112,7 +174,7 @@
       <hr class="footer-divider">
       <!--End of Footer horizontal line divider-->
 
-      <!--Terms-->
+      <!--Terms--
       
       <div class="terms-wrapper split-column">
         <a href="index.html" class="copy">
@@ -126,7 +188,7 @@
           <a href="cookie.html">Cookie Policy</a>
         </div>
       </div>
-      <!--End of Terms-->
+      <-End of Terms-->
     </div>
   </footer>
   <!--End of Footer-->
