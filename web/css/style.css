@@ -111,7 +111,7 @@ CUSTOM VARIABLES
 /*Responsive fluid styles for heading font-sizes*/
 
 h1 {
-  font-size: clamp(2.25rem, 2.0000rem + 1.2500vw, 3.125rem);
+  font-size: clamp(1.75rem, 1.679rem + 0.357vw, 2rem);
 }
 
 h2 {
@@ -453,7 +453,7 @@ header {
   background-color: var(--clr-bg-100);
   
   padding: 1rem 1.5rem;
-  padding-bottom: 0;
+  padding-bottom: 1rem;
   width: 100%;
 }
 
@@ -519,7 +519,7 @@ header {
   
 }*/
 
-.menu-mobile {
+.menu-nav-mobile {
   position: fixed;
   background: var(--clr-brand-300);
   width: 100%;
@@ -530,7 +530,7 @@ header {
   transform: translateX(0);
   transition: transform 250ms; 
   height: 100%;
-  padding: 1.5rem 2rem;
+  /*padding: 1.5rem 2rem;*/
   
   right: 1.5rem;
 }
@@ -613,7 +613,10 @@ header {
 
 /****/
 @media (min-width: 40em) {
-  .mobile-nav-container {
+  header {
+    padding-bottom: 0;
+  }
+  .nav-mobile {
     display: none;
   }
 
