@@ -41,77 +41,71 @@
 <body>
   <header>
     <!-- Navigation for mobile-->
-    <nav class="nav-mobile">
-      <!--Hamburger-->
-      <button aria-label="Open navigation" class="open-nav">&#9776;</button>
-      <!--End of Hamburger-->
-      
-      <!-- Image Logo -->
-      <a class="logo" href="index.html"><img src="images/logo.svg" alt="Your Logo name"></a>
-      <!-- Image Logo - Use this if you have an image logo -->
-      <!--Cart-->
-      <a href="#"><img src="images/shopping-bag.png" alt="Cart icon"></a>
-      <!--End of Cart-->
-      
-      
-
-      <!--
-      <div class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div> <-- end of hamburger ---->
-
+    <div class="mobile-nav-container">
+      <nav class="nav-mobile split">
+        <!--Cart-->
+        <a class="icon" href="#"><img src="images/shopping-bag.png" alt="Cart icon"></a>
+        <!--End of Cart-->
         
-     
-    </nav> 
-    <!-- end of nav for mobile -->
-
-    <!--Menu on mobile-->
-    <nav class="menu-mobile">
-      <button aria-label="Close navigation" class="close-nav">
-        &times;
-      </button>
-      <ul class="list-inside">
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li id="js-about">
-          <a href="#about" class="nav-link">About</a>
-        </li>
-        <li id="js-services"><a href="#services" class="nav-link">Services</a></li>
-        <li id="js-work"><a href="#work" class="nav-link">Work</a></li>
-        <li id="js-contact"><a href="contact.html" class="inside-btn btn">Book A Free Call</a>
-        </li>
-      </ul>
-    </nav>
-    <!--End of Menu on mobile-->
-
-    <!-- Navigation for tablet and desktop-->
-    <nav class="menu-large">
-      
-      <div class="top-nav">
         <!-- Image Logo -->
         <a class="logo" href="index.html"><img src="images/logo.svg" alt="Your Logo name"></a>
         <!-- Image Logo - Use this if you have an image logo -->
-        <div class="nav-right">
-          <a href="#"><img src="images/search.png" alt="Search icon"></a>
-          <a href="#"><img src="images/shopping-bag.png" alt="Cart icon"></a>
+        
+        <!--Hamburger-->
+        <button aria-label="Open navigation" class="open-nav">&#9776;</button>
+        <!--End of Hamburger-->
+      </nav> 
+      <!-- end of nav for mobile -->
+  
+      <!--Mobile only-->
+      <!--Menu on mobile-->
+      <nav class="menu-mobile">
+        <button aria-label="Close navigation" class="close-nav">
+          &times;
+        </button>
+        <ul class="list-inside">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li id="js-about">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li id="js-services"><a href="#services" class="nav-link">Services</a></li>
+          <li id="js-work"><a href="#work" class="nav-link">Work</a></li>
+          <li id="js-contact"><a href="contact.html" class="inside-btn btn">Book A Free Call</a>
+          </li>
+        </ul>
+      </nav>
+      <!--End of Menu on mobile-->
+    </div>
+
+    
+    <!--End of mobile only-->
+    <!-- Navigation for tablet and desktop-->
+    <nav class="menu-large">
+      
+      <div class="top-nav split">
+        <!-- Image Logo -->
+        <a class="logo" href="index.html"><img src="images/logo.svg" alt="Your Logo name"></a>
+        <!-- Image Logo - Use this if you have an image logo -->
+        <div class="nav-right split">
+          <a class="icon" href="#"><img src="images/search.png" alt="Search icon"></a>
+          <a class="icon" href="#"><img src="images/shopping-bag.png" alt="Cart icon"></a>
         </div>
       </div>
-      <div class="bottom-nav">
-        <div class="trust-item">
-          <img src="images/truck.png" alt="Truck icon">
+      <div class="trust-nav split">
+        <div class="trust-item split">
+          <img class="icon" src="images/truck.png" alt="Truck icon">
           <p class="text-300">Free Worldwide Shipping</p>
         </div>
-        <div class="trust-item">
-          <img src="images/rotate-cw.png" alt="Guarantee icon">
+        <div class="trust-item split">
+          <img class="icon-guarantee" src="images/rotate-cw.png" alt="Guarantee icon">
           <p class="text-300">50 Days Money Back Guarantee</p>
         </div>
-        <div class="trust-item">
-          <img src="images/star-border.png" alt="Loved by icon">
+        <div class="trust-item split">
+          <img class="icon" src="images/star-border.png" alt="Loved by icon">
           <p class="text-300">Loved by Thousands</p>
         </div>
-        <div class="trust-item">
-          <img src="images/support-agent.png" alt="Truck icon">
+        <div class="trust-item split">
+          <img class="icon" src="images/support-agent.png" alt="Truck icon">
           <p class="text-300">24/ Customer Support</p>
         </div>
         
@@ -125,7 +119,55 @@
     <!--Hero section-->
     <section class="hero">
       <!--Hero content-->
-      <div class="hero-content">
+      <div class="hero-content container">
+        <!--shipping for mobile only-->
+        <div class="trust-item shipping split">
+          <img class="icon" src="images/truck.png" alt="Truck icon">
+          <p class="text-300">Free Worldwide Shipping</p>
+        </div>
+        <!--Hero image-->
+        <div class="hero-img">
+          <img src="images/hero-img@1x.jpg" alt="Hero-img alt text">
+        </div>
+        <div class="hero-details">
+          <h1>Simply Feline | 100% natural nutrition for a happier, healthier cat!</h1>
+          <img src="images/trustpilot.png" alt="">
+           
+          <div class="pricing split">
+            <p class="discount">£25.00</p>
+            <p class="full-price">£40.00</p>
+            <p class="save">Save £15</p>
+            
+          </div>
+          
+          <div class="main-cta split-column">
+            <div class="cta-top split">
+              <a class="btn" href="#">Boost my cat's health now 👉</a>
+              <div class="warning split">
+                <img src="images/warning.png" alt="">
+                <p class="label">Selling Fast</p>
+              </div>
+            </div>
+            <a href="#"><img src="images/payment-set-large@1x.jpg" alt=""></a>
+          </div>
+          
+         
+        </div>
+
+        <div class="trust-nav-mobile split-column">
+          <div class="trust-item split">
+            <img class="icon" src="images/rotate-cw.png" alt="Guarantee icon">
+            <p class="text-300">50 Days Money Back Guarantee</p>
+          </div>
+          <div class="trust-item split">
+            <img class="icon" src="images/star-border.png" alt="Loved by icon">
+            <p class="text-300">Loved by Thousands</p>
+          </div>
+          <div class="trust-item split">
+            <img class="icon" src="images/support-agent.png" alt="Truck icon">
+            <p class="text-300">24/ Customer Support</p>
+          </div>
+        </div>
         
       </div>
       <!--End of Hero content-->
@@ -171,7 +213,7 @@
       <!--End of Footer Content-->
 
       <!--Footer horizontal line divider-->
-      <hr class="footer-divider">
+      
       <!--End of Footer horizontal line divider-->
 
       <!--Terms--
