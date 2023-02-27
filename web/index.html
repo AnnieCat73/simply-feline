@@ -41,46 +41,40 @@
 <body>
   <header>
     <!-- Navigation for mobile-->
-    
-    <div class="nav-mobile split">
-      <!--Cart-->
-      <a class="icon" href="#"><img src="images/shopping-bag.png" alt="Cart icon"></a>
-      <!--End of Cart-->
-      
-      <!-- Image Logo -->
-      <a class="logo" href="index.html"><img src="images/logo.svg" alt="Your Logo name"></a>
-      <!-- Image Logo - Use this if you have an image logo -->
-      
-      <!--Hamburger-->
-      <button aria-label="Open navigation" class="open-nav">&#9776;</button>
-      <!--End of Hamburger-->
-      <nav class="menu-nav-mobile">
-        <button aria-label="Close navigation" class="close-nav">
-          &times;
-        </button>
-        <ul class="list-inside">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li id="js-about">
-            <a href="#about" class="nav-link">About</a>
-          </li>
-          <li id="js-services"><a href="#services" class="nav-link">Services</a></li>
-          <li id="js-work"><a href="#work" class="nav-link">Work</a></li>
-          <li id="js-contact"><a href="contact.html" class="inside-btn btn">Book A Free Call</a>
-          </li>
-        </ul>
-      </nav>
-    </div> 
-      
-      
-    
-
-    
+    <nav class="mobile-nav">
+      <div class="container-nav">
+        <!--Cart-->
+        <a class="icon" href="#"><img src="images/shopping-bag.png" alt="Cart icon"></a>
+        <!--End of Cart-->
+        <!-- Image Logo -->
+        <a class="logo" href="index.html"><img src="images/logo.svg" alt="Your Logo name"></a>
+         <!-- end of Image Logo - Use this if you have an image logo -->
+        <!--Hamburger-->
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <!--End of Hamburger-->
+        <!--start of menu on mobile-->
+        <div class="navbar">
+          <ul class="list-inside">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li>
+              <a href="#" class="nav-link">About</a>
+            </li>
+            <li id="js-services"><a href="#services" class="nav-link">Benefits</a></li>
+            <li><a href="#work" class="nav-link">Testimonials</a></li>
+          </ul>
+          <a href="#" class="btn inside-btn">Boost my cat's health now 👉</a>
+        </div>
+         <!--end of menu on mobile-->
+    </nav>
     <!--End of mobile only-->
+
     <!-- Navigation for tablet and desktop-->
     <nav class="menu-large">
-      
       <div class="top-nav split">
-
         <!-- Image Logo -->
         <a class="logo" href="index.html"><img src="images/logo.svg" alt="Your Logo name"></a>
         <!-- Image Logo - Use this if you have an image logo -->
@@ -108,7 +102,6 @@
           <img class="icon" src="images/support-agent.png" alt="Alternative">
           <p class="text-300">24/ Customer Support</p>
         </div>
-        
       </div>
       <div class="divider"></div>
       
@@ -195,6 +188,12 @@
     </section>
     <!--End of Hero section-->
 
+    <!--Recommended section-->
+    <section class="recommended">
+
+    </section>
+    <!--End of Recommended section-->
+    
     <!--Benefits section-->
     <section class="benefits">
       
