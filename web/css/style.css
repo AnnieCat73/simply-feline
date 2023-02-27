@@ -1043,4 +1043,55 @@ header {
   }
 }
 
+/*MIDDLE CTA*/
+
+.middle-cta {
+  background-color: var(--clr-bg-300);
+}
+
+.middle-cta .container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.middle-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat (4, auto);
+  gap: 2rem;
+}
+
+.middle-img {
+  margin-top: -80px;
+}
+
+@media (min-width: 35em) {
+  .middle-cta .container {
+    grid-template-columns: 1.5fr 2fr;
+    grid-template-rows: 16rem;
+  }
+
+  .middle-content {
+    gap: 0;
+  }
+
+  .middle-img {
+    margin-top: px;
+    order: -1;
+  }
+  
+}
+@media (min-width: 55em) {
+  .middle-img {
+    margin-top: -200px;
+  }
+}
+
+@media (min-width: 78em) {
+  .middle-img {
+    margin-top: -350px;
+   
+  }
+}
+
 
