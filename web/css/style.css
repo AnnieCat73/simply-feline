@@ -1095,3 +1095,51 @@ header {
 }
 
 
+/*FEATURES SECTION*/
+
+.features-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3.5rem;
+}
+
+.feature {
+  justify-content: center;
+  gap: 1rem;
+ }
+
+.feature-img {
+  max-width: 70%;
+}
+
+.feature:nth-of-type(2) {
+  gap: initial;
+}
+
+@media (min-width: 40em) {
+  .feature:nth-of-type(2) {
+    gap: 1rem;
+  }
+  .feature:nth-of-type(4) .feature-img {
+   margin-top: -80px;
+   max-height: 70%;
+  }
+
+  .feature-img {
+    width: 60%;
+  }
+  .features-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+  }
+}
+
+@media (min-width: 60em) {
+  .feature-img {
+    width: 30%;
+  }
+ }
+
+
+
+
