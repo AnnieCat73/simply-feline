@@ -115,7 +115,8 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(1.75rem, 1.5357rem + 1.0714vw, 2.5rem);
+  
+  font-size: clamp(1.5rem, 1.429rem + 0.357vw, 1.75rem);
 }
 
 h3 {
@@ -241,8 +242,8 @@ h1 {
 }
 
 h2 {
-  
   font-weight: var(--fw-600);
+  text-align: center;
 }
 
 h3 { 
@@ -627,6 +628,7 @@ header {
 
 .hero {
   margin-top: 4rem;
+  margin-bottom: 2.5rem;
 }
 
 .hero .shipping {
@@ -729,6 +731,10 @@ header {
 }
 
 @media (min-width: 50em) {
+  .hero {
+    margin-bottom: 3.5rem;
+  }
+
   .hero .shipping {
     display: none;
   }
@@ -785,6 +791,10 @@ header {
 }
 
 @media (min-width: 60em) {
+  .hero {
+    margin-bottom: 4rem;
+  }
+
   .mid-content {
     display: flex;
     flex-direction: column;
@@ -817,3 +827,59 @@ header {
 
 
 /*RECOMMENDED*/
+
+.recommended {
+  border: 1px solid rgba(40, 31, 35, 0.07);
+  background-color: var(--clr-bg-200);
+  padding: 3rem 0;
+
+}
+
+.recommended h2 {
+  color: var(--clr-brand-300);
+  margin-bottom: 2rem;
+}
+
+.recommended-container {
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.company {
+  max-width: 6rem;
+  height: 5rem;
+  align-self: center;
+  flex-basis: 50%;
+}
+
+@media (min-width: 40em) {
+  .recommended {
+    padding: 3rem 0;
+  }
+
+  .recommended h2 {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 60em) {
+  .recommended {
+    padding: 3rem 0;
+  }
+
+  .recommended h2 {
+    margin-bottom: 3rem;
+  }
+
+  .recommended-container {
+    gap: 4rem;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 87.5em) {
+  .recommended {
+    padding: 3rem 0;
+  }
+}
