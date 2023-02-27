@@ -1138,7 +1138,63 @@ header {
   .feature-img {
     width: 30%;
   }
- }
+}
+
+
+/*VET CTA*/
+
+.vet-cta {
+  background-color: var(--clr-bg-300);
+}
+
+.vet-cta-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.vet-img {
+  justify-self: center;
+}
+
+.vet-img figcaption {
+  font-family: var(--ff-signature);
+  margin-top: -30px;
+}
+
+.vet-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.vet-heading {
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.ctas-vet {
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+@media (min-width: 50em) {
+  .vet-cta-container {
+    grid-template-columns: 1fr 1fr;
+    padding-top: 2rem;
+  }
+
+  .vet-img figcaption {
+    margin-top: -40px;
+  }
+}
+
+
+/*TESTIMONIALS*/
+
+
+
 
 
 
