@@ -120,7 +120,8 @@ h2 {
 }
 
 h3 {
-  font-size: clamp(1.438rem, 1.3131rem + 0.6243vw, 1.875rem);
+ 
+  font-size: clamp(1.188rem, 1.152rem + 0.179vw, 1.313rem);
 }
 
 h4 {
@@ -837,7 +838,6 @@ header {
 
 .recommended h2 {
   color: var(--clr-brand-300);
-  margin-bottom: 2rem;
 }
 
 .recommended-container {
@@ -856,10 +856,6 @@ header {
 @media (min-width: 40em) {
   .recommended {
     padding: 3rem 0;
-  }
-
-  .recommended h2 {
-    margin-bottom: 2.5rem;
   }
 }
 
@@ -883,3 +879,48 @@ header {
     padding: 3rem 0;
   }
 }
+
+
+/*TRANSFORMATION*/
+
+.transformation-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+.step {
+  gap: 1.3rem;
+}
+
+.step .label {
+  opacity: 0.8;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.step-icon {
+  opacity: 0.9;
+  max-width: 2rem;
+}
+
+.step span {
+  font-weight: var(--fw-600);
+}
+
+.step-content {
+  text-align: center;
+}
+
+.step-content p {
+  max-width: 22rem;
+}
+
+@media (min-width: 55em) {
+  .transformation-container {
+   grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+/*NUTRITION*/
