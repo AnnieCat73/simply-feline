@@ -1239,6 +1239,143 @@ header {
 }
 
 
+/*FAQ*/
+
+.faq {
+  background-color: var(--clr-bg-300);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  position: relative;
+}
+
+.faq h2 {
+  color: var(--clr-brand-300);
+}
+
+.faq-paws1 {
+  position: absolute;
+  top: 20px;
+  left: 70px;
+}
+
+.faq-paws2 {
+  position: absolute;
+  bottom: 40px;
+  right: 70px;
+}
+
+.faq-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3em;
+  max-width: 85ch;
+}
+
+/*FAQ-container*/
+
+.faq-drawer {
+  margin-bottom: 30px;
+}
+
+.faq-drawer-wrapper {
+  font-size: 1.25em;
+  line-height: 1.4em;
+  max-height: 0px;
+  overflow: hidden;
+  transition: 0.25s ease-in-out;
+}
+
+.faq-drawer-title {
+  border-top: 1px solid rgba(38, 31, 32, 0.3);
+  cursor: pointer;
+  display: block;
+  font-size: var(--fs-400);
+  font-weight: var(--fw-600);
+  padding: 30px 0 0 0;
+  position: relative;
+  margin-bottom: 0;
+  transition: all 0.25s ease-out;
+}
+
+.faq-drawer-title::after {
+  border-style: solid;
+  border-width: 1px 1px 0 0;
+  content: " ";
+  display: inline-block;
+  float: right;
+  height: 10px;
+  left: 2px;
+  position: relative;
+  right: 20px;
+  top: 2px;
+  transform: rotate(135deg);
+  transition: 0.35s ease-in-out;
+  vertical-align: top;
+  width: 10px;
+}
+
+/*Applied to the last question to get border bottom only*/
+.faq-drawer-title.last {
+  position: relative;
+}
+
+.faq-drawer-title.last::after {
+  content: "";
+  position: absolute;
+  border-style: none;
+}
+
+.faq-drawer-content p {
+  font-size: var(--fs-300);
+  opacity: 0.8;
+}
+
+/* Hover state */
+.faq-drawer-title:hover { 
+  opacity: 0.9;
+}
+
+.faq-drawer-trigger:checked
+  + .faq-drawer-title
+  + .faq-drawer-wrapper {
+  max-height: 350px;
+}
+
+.faq-drawer-trigger:checked + .faq-drawer-title::after {
+  transform: rotate(-45deg);
+  transition: 0.25s ease-in-out;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+@media (min-width: 36em) {
+  .faq-content {
+    gap: 3.5em;
+  }
+}
+
+@media (min-width: 62em) {
+  .faq-content {
+    gap: 4.5rem;
+  }
+}
+
+@media (min-width: 90em) {
+  .faq-paws1 {
+    top: 100px;
+    left: 250px;
+  }
+
+  .faq-paws2 {
+    bottom: 100px;
+    right: 250px;
+  }
+}
+
+
 
 
 
