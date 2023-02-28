@@ -1145,6 +1145,7 @@ header {
 
 .vet-cta {
   background-color: var(--clr-bg-300);
+  border: 1px solid rgba(40, 31, 35, 0.1);
 }
 
 .vet-cta-container {
@@ -1193,6 +1194,49 @@ header {
 
 /*TESTIMONIALS*/
 
+.trust-pilot {
+  margin: 0 auto;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+.testimonials-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+}
+
+.testimonial {
+  gap: 2rem;
+}
+
+.testimonial-content p {
+  text-align: center;
+}
+
+.testimonials .p-large {
+  font-size: var(--fs-500);
+  font-weight: var(--fw-600);
+}
+
+.testimonial-text {
+  gap: 1rem;
+
+}
+.testimonial-text p {
+  text-align: center;
+}
+
+.testimonials .label {
+  font-style: italic;
+}
+
+@media (min-width: 50em) {
+  .testimonials-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6rem;
+  }
+}
 
 
 
