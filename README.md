@@ -12,7 +12,7 @@ Free to use in your projects.
 - index.html holds the entire content
 
 ### Screenshot
-![](./web/images/github-screenshot.png)
+![](./web/images/github-screenshot.jpg)
 
 ### Images
 All images used in the preview are from freepik.com. You can use them if you wish in your project or change them to add your own.
