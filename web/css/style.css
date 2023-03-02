@@ -901,12 +901,12 @@ header {
   justify-self: center;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat (5, auto);
   gap: 1.5rem;
 }
 
 .nutrition-bullet p {
   color: var(--clr-brand-300);
+  font-size: var(--fs-300);
   font-weight: var(--fw-700);
 }
 
@@ -1002,7 +1002,7 @@ header {
 .middle-content {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat (4, auto);
+  grid-template-rows: repeat(4, auto);
   gap: 2rem;
 }
 
@@ -1030,7 +1030,6 @@ header {
   }
 
   .middle-img {
-    margin-top: px;
     order: -1;
   }
   
@@ -1365,7 +1364,6 @@ input[type="checkbox"] {
 .cta-content {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat (4, auto);
   gap: 1.8rem;
   margin-top: 1.5rem;
 }
