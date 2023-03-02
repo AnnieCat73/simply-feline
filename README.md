@@ -5,6 +5,8 @@ This is a template made with HTML, CSS and JavaScript only. No frameworks!
 
 Free to use in your projects.
 
+Please note that a shopping cart system and a subscribe form are not provided. 
+
 ### Files
 - css/style.css custom css styling
 - images folder contains all the images

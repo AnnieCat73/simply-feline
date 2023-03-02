@@ -1471,6 +1471,10 @@ input[type="checkbox"] {
   font-weight: var(--fw-700);
 }
 
+form {
+  position: relative;
+}
+
 /*Subcribe input field*/
 input[type="email"]{
   display: inline-block;
@@ -1498,8 +1502,9 @@ form:focus {
 }
 
 .bt {
-  margin-left: -160px;
-  margin-left: -110px;
+  position: absolute;
+  right: 10px;
+  top: 27px;
   font-size: 1rem;
   display: inline-block;
   font-weight: 600;
